@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beranda</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo">
+                    Web Ikan
+                </div>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="kontak-saya.html">Kontak Saya</a></li>
+                    <li><a href="tentang-saya.html">Tentang Saya</a></li>
+
+                </ul>
+            </nav>
+                <main>
+                <h1>Kontak Saya</h1>
+                <p>Silahkan isi formulir di bawah ini untuk menghubungi saya:</p>
+                <form action="proses-kontak.php" method="POST">
+                    <label for="nama">Nama:</label><br>
+                    <input type="text" id="nama" name="nama" required><br><br>
+                    <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="pesan">Pesan:</label><br>
+                <textarea id="pesan" name="pesan" rows="5" required></textarea><br><br>
+
+                <input type="submit" value="Kirim">
+                </form>
+                </main>
+
+                <footer>
+                    copyright 2022 teknik informatika
+                </footer>
+        </div>
+    </body>
+</html>
