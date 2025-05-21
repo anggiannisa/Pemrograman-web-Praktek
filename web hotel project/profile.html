@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profil Pembuat Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0b1a40;
+      color: #e1e8f0;
+    }
+
+    .profile-container {
+      display: flex;
+      max-width: 660px;
+      margin: 30px auto;
+      background-color: #12294b;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+      min-height: 250px;
+    }
+
+    .photo-section {
+      flex: 2; /* Diperbesar lagi */
+      background-color: #1a2f5a;
+      overflow: hidden;
+      min-height: 280px;
+    }
+
+    .photo-section img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .info-section {
+      flex: 2; /* Disesuaikan agar seimbang */
+      padding: 20px 25px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .info-card {
+      background-color: #163a7a;
+      padding: 10px 16px;
+      border-radius: 8px;
+      box-shadow: 0 1px 6px rgba(34, 76, 154, 0.4);
+    }
+
+    .info-card h3 {
+      margin: 0 0 6px;
+      font-weight: 600;
+      font-size: 14.5px;
+      color: #c3d5ff;
+    }
+
+    .info-card p {
+      margin: 0;
+      font-size: 13.5px;
+      color: #dbe4ff;
+    }
+
+    .info-card a {
+      color: #a0c4ff;
+      text-decoration: none;
+    }
+
+    .info-card a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      .profile-container {
+        flex-direction: column;
+        max-width: 95%;
+        min-height: auto;
+      }
+
+      .photo-section {
+        height: auto;
+        min-height: unset;
+      }
+
+      .photo-section img {
+        height: auto;
+        width: 100%;
+      }
+
+      .info-section {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-container">
+    <div class="photo-section">
+      <img src="img/Anggi.jpg" alt="Foto Pembuat Website" />
+    </div>
+    <div class="info-section">
+      <div class="info-card">
+        <h3>Nama Lengkap</h3>
+        <p>Anggi Annisa Octaviani</p>
+      </div>
+      <div class="info-card">
+        <h3>Posisi</h3>
+        <p>Web Developer & UI/UX Designer</p>
+      </div>
+      <div class="info-card">
+        <h3>Email</h3>
+        <p><a href="mailto:anggiannisa.oktaviani@gmail.com">anggiannisa.oktaviani@gmail.com</a></p>
+      </div>
+      <div class="info-card">
+        <h3>Instagram</h3>
+        <p><a href="https://www.instagram.com/anggi.a__/" target="_blank">@anggi.a__</a></p>
+      </div>
+      <div class="info-card">
+        <h3>Telepon</h3>
+        <p>+62 813 7202 8448</p>
+      </div>
+      <div class="info-card">
+        <h3>Lokasi</h3>
+        <p>Batam, Kepulauan Riau</p>
+      </div>
+      <div class="info-card">
+        <h3>Deskripsi Singkat</h3>
+        <p>Saya seorang mahasiswi Universitas Putera Batam dari Program Studi Sistem Informasi, Fakultas Teknik dan Komputer.</p>
+      </div>
+    </div>
+  </div>
+     
+  <footer style="background-color: #1b355b; color: #ccc; text-align: center; padding: 20px; font-size: 14px;">
+    &copy; 2025 GYUU HOTEL. All rights reserved. | Alamat: BATAM, Kepulauan Riau | Telp: (+62) 813 7202 8448
+  </footer>
+
+</body>
+</html>
