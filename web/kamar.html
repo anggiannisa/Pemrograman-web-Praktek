@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tentang Kami</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eaeff7;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      background-color: #5c6bc0;
+      color: white;
+      max-width: 1000px;
+      width: 100%;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+    }
+
+    .image-row img {
+      width: 300px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .about-text {
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    .about-text p {
+      margin-bottom: 20px;
+    }
+
+    /* Card Kamar */
+    .card-container {
+      background-color: #1b355b;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      gap: 20px;
+      flex-wrap: wrap;
+      color: white;
+    }
+
+    .card-image {
+      width: 250px;
+      flex-shrink: 0;
+    }
+
+    .card-image img {
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+    }
+
+    .card-text {
+      flex: 1;
+      text-align: center;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .card-description {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      .image-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .card-image {
+        width: 100%;
+      }
+    }
+
+    /* Form Booking */
+    .booking-container {
+      background-color: #5c6bc0;
+      color: white;
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .booking-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      margin-top: 15px;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #3949ab;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #303f9f;
+    }
+
+    @media (max-width: 768px) {
+      .image-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .card-image {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Bagian Tentang Kami -->
+    <div class="image-row">
+
+    <!-- Kartu Kamar Deluxe -->
+   <div class="card-container">
+      <div class="card-image">
+        <img src="img/kamar.deluxe.jpg" alt="Kamar Deluxe" />
+      </div>
+      <div class="card-text">
+        <div class="card-title">Deluxe Room</div>
+        <div class="card-description">
+          Deluxe room menawarkan ruang yang lebih besar dan fasilitas yang lebih lengkap 
+          dibanding superior room. Biasanya, interiornya lebih mewah, tersedia pilihan 
+          double bed atau twin bed, dan seringkali berada di lokasi hotel yang lebih strategis 
+          (misal, lantai atas atau sudut)<br><br>
+          
+          <strong>Harga:</strong> Rp2.500.000/malam<br>
+          <strong>Rating:</strong> ⭐⭐⭐⭐⭐(5 Bintang)
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="image-row"></div>
+    <!-- Bagian Tentang Kami -->
+   <div class="card-container">
+      <div class="card-image">
+        <img src="img/kamar.suite.jpg" alt="Kamar Suite" />
+      </div>
+      <div class="card-text">
+        <div class="card-title">Suite Room</div>
+        <div class="card-description">
+          Suite room menawarkan beberapa ruangan terpisah, seperti kamar tidur, ruang tamu, 
+          dan kadang dapur kecil. Fasilitasnya lebih lengkap dan mewah, cocok untuk tamu yang 
+          menginginkan kenyamanan ekstra atau menginap lebih lama<br><br>
+          
+          <strong>Harga:</strong> Rp3.500.000/malam<br>
+          <strong>Rating:</strong> ⭐⭐⭐⭐⭐(5 Bintang)
+        </div>
+      </div>
+    </div>
+  
+    <div class="image-row"></div>
+    <!-- Bagian Tentang Kami -->
+   <div class="card-container">
+      <div class="card-image">
+        <img src="img/kamar.family.jpeg" alt="Kamar Family" />
+      </div>
+      <div class="card-text">
+        <div class="card-title">Family Room</div>
+        <div class="card-description">
+          Dirancang untuk keluarga, kamar ini lebih luas dan biasanya memiliki beberapa 
+          tempat tidur atau tambahan sofa bed. Sering dilengkapi fasilitas ekstra seperti 
+          microwave atau kulkas kecil<br><br>
+          
+          <strong>Harga:</strong> Rp4.000.000/malam<br>
+          <strong>Rating:</strong> ⭐⭐⭐⭐⭐(5 Bintang)
+        </div>
+      </div>
+    </div>
+
+    <div class="image-row"></div>
+    <!-- Bagian Tentang Kami -->
+   <div class="card-container">
+      <div class="card-image">
+        <img src="img/kamar.standar.jpg" alt="Kamar Sandar" />
+      </div>
+      <div class="card-text">
+        <div class="card-title">Standart Room</div>
+        <div class="card-description">
+          Tipe kamar paling dasar di hotel, biasanya dengan fasilitas standar seperti tempat 
+          tidur (king, queen, atau single), kamar mandi pribadi, televisi, dan meja. Cocok untuk 
+          satu atau dua orang tamu dengan harga paling terjangkau<br><br>
+          
+          <strong>Harga:</strong> Rp1.000.000/malam<br>
+          <strong>Rating:</strong> ⭐⭐⭐⭐⭐(5 Bintang)
+        </div>
+      </div>
+    </div>
+
+    <div class="image-row"></div>
+    <!-- Bagian Tentang Kami -->
+   <div class="card-container">
+      <div class="card-image">
+        <img src="img/kamar.twin.jpeg" alt="Kamar Twin" />
+      </div>
+      <div class="card-text">
+        <div class="card-title">Twin Room</div>
+        <div class="card-description">
+          Kamar dengan dua tempat tidur single yang terpisah, ideal untuk dua tamu 
+          yang ingin tidur di tempat terpisah, seperti teman atau saudara<br><br>
+          
+          <strong>Harga:</strong> Rp3.000.000/malam<br>
+          <strong>Rating:</strong> ⭐⭐⭐⭐⭐(5 Bintang)
+        </div>
+      </div>
+    </div>
+
+    <div class="image-row"></div>
+    <!-- Bagian Tentang Kami -->
+   <div class="card-container">
+      <div class="card-image">
+        <img src="img/kamar.superior.jpeg" alt="Kamar Superior" />
+      </div>
+      <div class="card-text">
+        <div class="card-title">Superior Room</div>
+        <div class="card-description">
+          Kamar ini berada satu tingkat di atas standard room, menawarkan ukuran ruangan 
+          yang sedikit lebih luas, pemandangan yang lebih baik, atau fasilitas tambahan seperti 
+          interior yang lebih menarik atau balkon<br><br>
+          
+          <strong>Harga:</strong> Rp4.500.000/malam<br>
+          <strong>Rating:</strong> ⭐⭐⭐⭐⭐(5 Bintang)
+        </div>
+      </div>
+    </div>
+
+    <div class="image-row"></div>
+    <!-- Bagian Tentang Kami -->
+   <div class="card-container">
+      <div class="card-image">
+        <img src="img/kamar.presidential suite.jpg" alt="Kamar Presidential Suite" />
+      </div>
+      <div class="card-text">
+        <div class="card-title">Presidential Suite Room</div>
+        <div class="card-description">
+          Tipe kamar paling mewah dan eksklusif di hotel, biasanya sangat luas dengan beberapa 
+          ruangan (ruang tidur utama, ruang tamu, ruang makan, dapur, balkon). Fasilitas super lengkap, 
+          pemandangan terbaik, dan layanan premium seperti butler pribadi<br><br>
+          
+          <strong>Harga:</strong> Rp50.000.000/malam<br>
+          <strong>Rating:</strong> ⭐⭐⭐⭐⭐(5 Bintang)
+        </div>
+      </div>
+    </div>
+
+      <div class="image-row"></div>
+    <!-- Bagian Tentang Kami -->
+   <div class="card-container">
+      <div class="card-image">
+        <img src="img/kamar.double.jpg" alt="Kamar Double" />
+      </div>
+      <div class="card-text">
+        <div class="card-title">Double Room</div>
+        <div class="card-description">
+          Kamar dengan satu tempat tidur double (queen atau king), cocok untuk dua orang, 
+          biasanya pasangan. Double room dapat dibedakan lagi menjadi queen double room dan 
+          king double room berdasarkan ukuran kasur<br><br>
+          
+          <strong>Harga:</strong> Rp4.500.000/malam<br>
+          <strong>Rating:</strong> ⭐⭐⭐⭐⭐(5 Bintang)
+        </div>
+      </div>
+    </div>
+
+
+    <div class="image-row"></div>
+    <!-- Bagian Tentang Kami -->
+   <div class="card-container">
+      <div class="card-image">
+        <img src="img/kamar.connecting.jpg" alt="Kamar Connecting" />
+      </div>
+      <div class="card-text">
+        <div class="card-title">Connecting Room</div>
+        <div class="card-description">
+          Dua kamar yang terhubung dengan pintu di dalam, cocok untuk keluarga atau kelompok 
+          yang ingin tetap berdekatan namun tetap memiliki privasi masing-masing<br><br>
+          
+          <strong>Harga:</strong> Rp10.000.000/malam<br>
+          <strong>Rating:</strong> ⭐⭐⭐⭐⭐(5 Bintang)
+        </div>
+      </div>
+    </div>
+
+
+    <div class="image-row"></div>
+    <!-- Bagian Tentang Kami -->
+   <div class="card-container">
+      <div class="card-image">
+        <img src="img/kamar.junior suite.jpeg" alt="Kamar Junior Suite" />
+      </div>
+      <div class="card-text">
+        <div class="card-title">Junior Suite Room</div>
+        <div class="card-description">
+          Junior suite memiliki ruang lebih luas dari deluxe, biasanya terdapat area duduk atau 
+          ruang tamu kecil yang masih satu ruangan dengan tempat tidur, kadang dipisahkan dengan 
+          sekat atau lemari besar. Fasilitasnya lebih mewah dari deluxe<br><br>
+          
+          <strong>Harga:</strong> Rp25.000.000/malam<br>
+          <strong>Rating:</strong> ⭐⭐⭐⭐⭐(5 Bintang)
+        </div>
+      </div>
+    </div>
+
+
+    <div class="image-row"></div>
+    <!-- Bagian Tentang Kami -->
+   <div class="card-container">
+      <div class="card-image">
+        <img src="img/kamar.executive.jpg" alt="Kamar Executive" />
+      </div>
+      <div class="card-text">
+        <div class="card-title">Executive Room</div>
+        <div class="card-description">
+          Ditujukan untuk pelancong bisnis, executive room menawarkan fasilitas seperti meja kerja luas, 
+          akses internet cepat, dan kadang akses ke lounge eksekutif. Sering berada di lantai atas dengan 
+          pemandangan lebih baik<br><br>
+          
+          <strong>Harga:</strong> Rp22.000.000/malam<br>
+          <strong>Rating:</strong> ⭐⭐⭐⭐⭐(5 Bintang)
+        </div>
+      </div>
+    </div>
+
+
+    <div class="image-row"></div>
+    <!-- Bagian Tentang Kami -->
+   <div class="card-container">
+      <div class="card-image">
+        <img src="img/kamar.single.jpg" alt="Kamar Single" />
+      </div>
+      <div class="card-text">
+        <div class="card-title">Singe Room</div>
+        <div class="card-description">
+          Kamar dengan satu tempat tidur single, cocok untuk tamu yang menginap sendiri. 
+          Fasilitasnya sederhana, namun tetap dilengkapi kamar mandi pribadi dan perlengkapan dasar<br><br>
+          
+          <strong>Harga:</strong> Rp1.000.000/malam<br>
+          <strong>Rating:</strong> ⭐⭐⭐⭐⭐(5 Bintang)
+        </div>
+      </div>
+    </div>
+
+     <div class="booking-container">
+    <h2>Form Booking Kamar</h2>
+    <form action="#" method="post">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="checkin">Tanggal Check-in</label>
+      <input type="date" id="checkin" name="checkin" required>
+
+      <label for="checkout">Tanggal Check-out</label>
+      <input type="date" id="checkout" name="checkout" required>
+
+      <label for="tipe">Tipe Kamar</label>
+      <select id="tipe" name="tipe" required>
+        <option value="">-- Pilih Tipe Kamar --</option>
+        <option value="Deluxe">Deluxe Room</option>
+        <option value="Suite">Suite Room</option>
+        <option value="Family">Family Room</option>
+        <option value="Standar">Standard Room</option>
+        <option value="Twin">Twin Room</option>
+        <option value="Superior">Superior Room</option>
+        <option value="Presidential">Presidential Suite</option>
+        <option value="Double">Double Room</option>
+        <option value="Connecting">Connecting Room</option>
+        <option value="Junior">Junior Suite</option>
+        <option value="Executive">Executive Room</option>
+        <option value="Single">Single Room</option>
+      </select>
+
+      <button type="submit">Pesan Sekarang</button>
+    </form>
+  </div>
+
+   <footer style="background-color: #1b355b; color: #ccc; text-align: center; padding: 20px; font-size: 14px;">
+    &copy; 2025 GYUU HOTEL. All rights reserved. | Alamat: BATAM, Kepulauan Riau | Telp: (+62) 813 7202 8448
+  </footer>
+</body>
+</html>

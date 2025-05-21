@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+  }
+  
+  .logo {
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+  }
+  
+  .harris {
+    color: #8b5fbf; /* ungu */
+    font-weight: bold;
+  }
+  
+  .hotel {
+    color: #1f3556; /* biru navy tua */
+    font-weight: bold;
+  }
+  
+  .hero-image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .navbar {
+    background-color: #2c3e50; /* navy */
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px 0;
+  }
+  
+  .navbar li {
+    margin: 0 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: #34495e;
+    border-radius: 4px;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+  }
+  
+  .card {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .navbar {
+    background-color: #2c3e50; /* biru navy */
+    width: 100%;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar li {
+    margin: 0 30px;
+  }
+  
+  .navbar a {
+    display: inline-block;
+    padding: 15px 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    transition: background 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    background-color: #1a252f;
+  }
+  
+  .about-text {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .about-text p {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+  
+   
